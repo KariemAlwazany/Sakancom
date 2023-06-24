@@ -11,6 +11,7 @@ public class HelloController {
 
     @FXML
     protected void onHelloButtonClick() {
+        //test pushing
         String host = "localhost";
         int port = 3306;
         String database = "Sakancom";
