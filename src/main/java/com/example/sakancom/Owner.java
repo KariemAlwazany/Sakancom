@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminController {
+public class Owner {
     private Stage stage;
 
     private Scene scene;
 
     private Parent root;
-    protected void onSignout(ActionEvent e) throws IOException {
+    public void onSignout(ActionEvent e) throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         stage=(Stage)((Node)e.getSource()).getScene().getWindow();
@@ -23,5 +23,4 @@ public class AdminController {
         stage.setScene(scene);
         stage.show();
     }
-
 }

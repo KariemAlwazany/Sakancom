@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -18,13 +19,13 @@ public class LoginController {
     private Label welcomeText;
 
     @FXML
-    private TextField Password;
+    private PasswordField Password;
 
     @FXML
     private TextField userName;
-    private Stage stage;
+    private static Stage stage;
 
-    private Scene scene;
+    private static Scene scene;
 
     private Parent root;
     @FXML
@@ -117,5 +118,14 @@ public class LoginController {
         //
 
 
+    }
+
+    public void Signup(ActionEvent e) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("signUp.fxml"));
+        stage=(Stage)((Node)e.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

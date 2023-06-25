@@ -16,7 +16,7 @@ public class Tenant {
     private Scene scene;
 
     private Parent root;
-    protected void onSignout(ActionEvent e) throws IOException {
+    public void onSignout(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         stage=(Stage)((Node)e.getSource()).getScene().getWindow();
         scene=new Scene(root);
