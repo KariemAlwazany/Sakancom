@@ -36,6 +36,7 @@ public class HelloController {
             System.out.println("Failed to connect to the MySQL database!");
             e.printStackTrace();
         }
+        //
 
 
     }
