@@ -111,5 +111,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 For queries or feedback, reach out:
 
-- **Name**: Yazan Mansour
-- **Email**: Yazan.mansour2003@gmail.com
+- **Name**: Kariem AbuAisheh 
+- **Email**: kariemalwazany@gmail.com
